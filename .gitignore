@@ -1,3 +1,5 @@
+.prettierrc.yaml
+
 # Logs
 logs
 *.log
