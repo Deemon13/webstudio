@@ -1,0 +1,23 @@
+/* COLORS */
+/* main bg color - #FFFFFF */
+/* section team bg color - #F5F4FA */
+/* footer bg color - #2F303A */
+
+/* accent color - #2196F3 - logo-header-footer, link-hover, button-bg-color*/
+/* main font color - #212121 - link, section-titles, text-buttons-portfolio*/
+/* logo second color - #000000 - logo-header*/
+/* secondary font color - #757575 - mail-header, tel-header, section-text*/
+/* alternative font color - #757575 - hero-title*/
+/* alternative white font color - #ffffff - button-text, logo-footer-second, address-footer*/
+/* alternative white font color - #ffffff 60% - mail-footer, tel-footer*/
+
+/* FONTS */
+/* Raleway bold (700) - logo-header*/
+/* Roboto medium (500) - links, team-names, mail-header, tel-header, button-portfolio */
+/* Roboto black (900) - hero-title */
+/* Roboto bold (700) - button-text, section-titles */
+/* Roboto regular (400) - section-text, address, mail-footer, tel-footer */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
