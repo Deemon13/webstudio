@@ -10,15 +10,50 @@
   --secondary-dark-text-color: #757575;
   --footer-link-color: rgba(255, 255, 255, 0.6); /* #ffffff 60% */
 
+  --header-line-color: #ececec;
   --accent-color: #2196f3;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
   font-style: normal;
 
   color: var(--main-dark-text-color);
   background-color: var(--main-bg-color);
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .list {
@@ -30,6 +65,8 @@ body {
 }
 
 .btn {
+  border: none;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -38,10 +75,11 @@ body {
 
   color: var(--main-light-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -68,6 +106,44 @@ body {
 
 /* HEADER */
 
+.header {
+  padding: 30px 0;
+
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+.container-header {
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: 94px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list > li:not(:last-child) {
+  margin-right: 52px;
+}
+
+.auth-list {
+  display: flex;
+  align-items: center;
+}
+
+.auth-list > li:not(:last-child) {
+  margin-right: 52px;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -93,7 +169,17 @@ body {
   background-color: var(--main-dark-bg-color);
 }
 
+.container-hero {
+  /* margin: 0 auto; */
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-title {
+  margin-bottom: 42px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,13 +190,41 @@ body {
   color: var(--main-light-text-color);
 }
 
+.btn-hero {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+
+  border-radius: 4px;
+}
+
 /* SECTION - FEATURES */
 
-.features {
+.section-features {
   background-color: var(--secondary-light-bg-color);
 }
 
+/* .container-features {
+  margin: 0 auto;
+} */
+
 .features-title {
+  display: none;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.features-list > li {
+  flex-basis: calc((100% - 150px) / 4);
+}
+
+.features-list-title {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -133,17 +247,61 @@ body {
 
 /* SECTION - SERVICES */
 
+.section-services {
+  padding-top: 0;
+}
+
+/* .container-services {
+  margin: 0 auto;
+} */
+
+.services-title {
+  margin-bottom: 60px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.services-list > li {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 /* SECTION-TEAM */
 
-.team {
+.section-team {
   background-color: var(--alternative-light-bg-color);
 }
 
+/* .container-team {
+  margin: 0 auto;
+} */
+
+.title-team {
+  margin-bottom: 52px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .team-item {
+  flex-basis: calc((100% - 90px) / 4);
+
   background-color: var(--main-light-bg-color);
 }
 
+.team-wrapper {
+  padding: 28px;
+}
+
 .team-name {
+  margin-bottom: 12px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -164,10 +322,23 @@ body {
 /* FOOTER */
 
 .footer {
+  padding: 64px 0;
   background-color: var(--main-dark-bg-color);
 }
 
+/* .container-footer {
+  margin: 0 auto;
+} */
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
 .address {
+  display: flex;
+  flex-direction: column;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -177,8 +348,16 @@ body {
   color: var(--main-light-text-color);
 }
 
+.address-text {
+  margin-bottom: 16px;
+}
+
 .footer-link {
   color: var(--footer-link-color);
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .footer-link:hover,
