@@ -137,8 +137,8 @@ img {
 
 .header-link {
   display: block;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
