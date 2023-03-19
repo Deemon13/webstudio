@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -26,22 +29,26 @@
             >Web<span class="logo-dark">Studio</span></a
           >
           <ul class="navigation-list list">
-            <li><a href="" class="header-link link current-link">Студия</a></li>
-            <li>
+            <li class="navigation-list-item">
+              <a href="" class="header-link link current-link">Студия</a>
+            </li>
+            <li class="navigation-list-item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
             </li>
-            <li><a href="#contacts" class="header-link link">Контакты</a></li>
+            <li class="navigation-list-item">
+              <a href="#contacts" class="header-link link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="auth-list list">
-          <li>
+          <li class="auth-list-item">
             <a
               href="mailto:info@devstudio.com"
               class="header-link contact-link link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="auth-list-item">
             <a href="tel:+380961111111" class="header-link contact-link link"
               >+38 096 111 11 11</a
             >
@@ -68,28 +75,28 @@
         <div class="container">
           <h2 class="features-title title">Особенности</h2>
           <ul class="features-list list">
-            <li>
+            <li class="features-list-item">
               <h3 class="features-list-title">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="features-list-title">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="features-list-title">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="features-list-title">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -105,7 +112,7 @@
         <div class="container">
           <h2 class="services-title title">Чем мы занимаемся</h2>
           <ul class="services-list list">
-            <li>
+            <li class="services-list-item">
               <img
                 src="./images/work-section/desktop-app-desktop-opt.jpg"
                 alt="Десктопные приложения"
@@ -113,7 +120,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="services-list-item">
               <img
                 src="./images/work-section/mobile-app-desktop-opt.jpg"
                 alt="Мобильные приложения"
@@ -121,7 +128,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="services-list-item">
               <img
                 src="./images/work-section/design-desktop-opt.jpg"
                 alt="Дизайнерские решения"
