@@ -15,6 +15,9 @@
   --portfolio-gallery-border-color: #eeeeee;
   --header-line-color: #ececec;
   --accent-color: #2196f3;
+
+  --animation-time: 250ms;
+  --animation-time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -148,6 +151,8 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--main-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
 }
 
 .mail-icon,
@@ -167,6 +172,24 @@ img {
 .header-link:focus,
 .current-link {
   color: var(--accent-color);
+}
+
+.current-link {
+  position: relative;
+}
+
+.current-link::after {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 3px);
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: var(--accent-color);
 }
 
 /* SECTION - HERO */
@@ -308,7 +331,31 @@ img {
 }
 
 .services-list-item {
+  position: relative;
+
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.services-list-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-light-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* SECTION-TEAM */
