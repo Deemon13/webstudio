@@ -443,6 +443,9 @@ img {
   border-radius: 50%;
 
   color: var(--icon-color);
+
+  transition: color var(--animation-time) var(--animation-time-function),
+    background-color var(--animation-time) var(--animation-time-function);
 }
 
 .team-link-social:hover,
@@ -483,6 +486,9 @@ img {
   border-radius: 4px;
 
   color: var(--icon-color);
+
+  transition: color var(--animation-time) var(--animation-time-function),
+    border-color var(--animation-time) var(--animation-time-function);
 }
 
 .client-icon-wrap {
@@ -545,6 +551,8 @@ img {
 
 .footer-link {
   color: var(--footer-link-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
 }
 
 .footer-link:not(:last-child) {
@@ -601,6 +609,9 @@ img {
 
   color: var(--main-light-text-color);
   background-color: var(--footer-bg-icon-color);
+
+  transition: background-color var(--animation-time)
+    var(--animation-time-function);
 }
 
 .footer-link-social:hover,
@@ -654,6 +665,10 @@ img {
   background-color: var(--alternative-light-bg-color);
 
   cursor: pointer;
+
+  transition: color var(--animation-time) var(--animation-time-function),
+    background-color var(--animation-time) var(--animation-time-function),
+    box-shadow var(--animation-time) var(--animation-time-function);
 }
 
 .filter-btn:hover,
@@ -677,6 +692,12 @@ img {
   flex-basis: calc((100% - 60px) / 3);
 
   background-color: var(--main-light-bg-color);
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-wrapper {
