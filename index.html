@@ -83,6 +83,49 @@
                 <use href="./images/sprite.svg#close"></use>
               </svg>
             </span>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form
+              action="javascript:void(0);"
+              autocomplete="off"
+              method="post"
+              name="subscribe-form"
+              class="modal-subscribe"
+            >
+              <label for="username" class="modal-input-label">Имя</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="modal-input"
+              />
+              <label for="phone_number" class="modal-input-label"
+                >Телефон</label
+              >
+              <input type="tel" name="phone_number" id="phone_number" />
+              <label for="email" class="modal-input-label">Почта</label>
+              <input type="email" name="email" id="email" class="modal-input" />
+              <label for="comments" class="modal-input-label"
+                >Комментарии</label
+              >
+              <textarea
+                name="coments"
+                id="comments"
+                cols="30"
+                rows="10"
+                class="modal-comments"
+              ></textarea>
+              <label for="subscription" class="modal-subscription-label"
+                >Согласен с рассылкой и принимаю
+                <a href="">Условия договора</a></label
+              >
+              <input
+                type="checkbox"
+                name="subscription"
+                id="subscription"
+                class="modal-subscription-input"
+              />
+              <button type="submit" class="btn modal-submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -536,9 +579,10 @@
           </ul>
         </div>
         <form
-          action=""
+          action="javascript:void(0);"
           name="signup_form"
           autocomplete="off"
+          method="post"
           class="footer_signup-form"
         >
           <p class="join-title">Подпишитесь на рассылку</p>

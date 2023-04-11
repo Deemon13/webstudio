@@ -293,6 +293,10 @@ img {
 
   min-width: 528px;
   min-height: 580px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   border-radius: 4px;
 
   background-color: var(--main-light-bg-color);
@@ -330,6 +334,19 @@ img {
 .modal-icon-close-wrapper:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-dark-text-color);
 }
 
 /* SECTION - FEATURES */
@@ -739,15 +756,9 @@ img {
 }
 
 .footer-signup-form-input::placeholder {
-  /* font-family: 'Roboto';
-  font-style: normal; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  /* identical to box height, or 125% */
-
-  /* display: flex;
-  align-items: center; */
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
