@@ -17,6 +17,7 @@
   --portfolio-gallery-border-color: #eeeeee;
   --header-line-color: #ececec;
   --accent-color: #2196f3;
+  --accent-hover-btn: #188ce8;
 
   --animation-time: 250ms;
   --animation-time-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,7 +76,7 @@ img {
 .btn:hover,
 .btn:focus {
   color: var(--secondary-light-bg-color);
-  background-color: #008cff;
+  background-color: var(--accent-hover-btn);
 }
 
 .btn:active {
@@ -347,6 +348,117 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--main-dark-text-color);
+}
+
+.modal-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input-label {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-dark-text-color);
+}
+
+.modal-input {
+  margin-bottom: 10px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--main-dark-text-color);
+}
+
+.modal-input:focus {
+  outline: none;
+
+  border-color: var(--accent-color);
+}
+
+.modal-comments {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--main-dark-text-color);
+}
+
+.modal-comments::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comments:focus {
+  outline: none;
+
+  border-color: var(--accent-color);
+}
+
+.modal-subscription {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.modal-subscription-input {
+  margin-right: 8px;
+}
+
+.modal-subscription-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-dark-text-color);
+}
+
+.modal-subscription-link {
+  color: var(--accent-color);
+}
+
+.btn-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-submit {
+  min-width: 200px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 /* SECTION - FEATURES */
