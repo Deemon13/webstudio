@@ -889,7 +889,6 @@ img {
 
 .footer_signup-form {
   padding-top: 12px;
-  /* display: flex; */
 }
 
 .footer-signup-form-input {
@@ -910,6 +909,8 @@ img {
 
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
 .footer-signup-form-input::placeholder {
@@ -923,6 +924,8 @@ img {
 
 .footer-signup-form-input:focus {
   outline: none;
+
+  border-color: var(--accent-color);
 }
 
 .footer-signup-form-submit {
