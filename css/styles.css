@@ -366,12 +366,22 @@ img {
   color: var(--secondary-dark-text-color);
 }
 
-.modal-input {
+.modal-input-wrapper {
+  position: relative;
+
   margin-bottom: 10px;
+
+  color: var(--main-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.modal-input {
   padding-top: 11px;
   padding-right: 12px;
   padding-bottom: 11px;
-  padding-left: 12px;
+  padding-left: 42px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -381,12 +391,26 @@ img {
   letter-spacing: 0.01em;
 
   color: var(--main-dark-text-color);
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
 .modal-input:focus {
   outline: none;
 
   border-color: var(--accent-color);
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+
+  fill: currentColor;
+}
+
+.modal-input-wrapper:focus-within {
+  color: var(--accent-color);
 }
 
 .modal-comments {
@@ -406,6 +430,8 @@ img {
   letter-spacing: 0.01em;
 
   color: var(--main-dark-text-color);
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
 .modal-comments::placeholder {
@@ -425,15 +451,33 @@ img {
 
 .modal-subscription {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   align-items: center;
   margin-right: auto;
   margin-bottom: 30px;
 }
 
-.modal-subscription-input {
+.modal-subscription-check {
+  width: 16px;
+  height: 15px;
   margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-dark-text-color);
+  border-radius: 2px;
+
+  color: var(--main-light-text-color);
+  background-color: var(--accent-color);
 }
+
+.modal-subscription-check-icon {
+  fill: currentColor;
+}
+
+/* .modal-subscription-input {
+  margin-right: 8px;
+} */
 
 .modal-subscription-label {
   font-weight: 400;
@@ -845,6 +889,7 @@ img {
 
 .footer_signup-form {
   padding-top: 12px;
+  /* display: flex; */
 }
 
 .footer-signup-form-input {
@@ -886,8 +931,16 @@ img {
   padding-bottom: 10px;
   padding-left: 28px;
   min-width: 200px;
+  display: inline-flex;
+  align-items: center;
 
   color: var(--main-light-text-color);
+}
+
+.footer-signup-form-submit-icon {
+  margin-left: 10px;
+
+  fill: currentColor;
 }
 
 /* SECTION - PORTFOLIO */

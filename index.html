@@ -92,23 +92,44 @@
               class="modal-subscribe"
             >
               <label for="username" class="modal-input-label">Имя</label>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                class="modal-input"
-              />
+              <div class="modal-input-wrapper">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="modal-input"
+                />
+                <svg width="12" height="12" class="modal-input-icon">
+                  <use href="./images/sprite.svg#person"></use>
+                </svg>
+              </div>
+
               <label for="phone_number" class="modal-input-label"
                 >Телефон</label
               >
-              <input
-                type="tel"
-                name="phone_number"
-                id="phone_number"
-                class="modal-input"
-              />
+              <div class="modal-input-wrapper">
+                <input
+                  type="tel"
+                  name="phone_number"
+                  id="phone_number"
+                  class="modal-input"
+                />
+                <svg width="13" height="13" class="modal-input-icon">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </div>
               <label for="email" class="modal-input-label">Почта</label>
-              <input type="email" name="email" id="email" class="modal-input" />
+              <div class="modal-input-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="modal-input"
+                />
+                <svg width="15" height="12" class="modal-input-icon">
+                  <use href="./images/sprite.svg#mail-form"></use>
+                </svg>
+              </div>
               <label for="comments" class="modal-input-label"
                 >Комментарии</label
               >
@@ -121,6 +142,16 @@
                 placeholder="Введите текст"
               ></textarea>
               <div class="modal-subscription" role="group">
+                <span class="modal-subscription-check">
+                  <svg
+                    width="11"
+                    height="8"
+                    class="modal-subscription-check-icon"
+                  >
+                    <use href="./images/sprite.svg#checked"></use>
+                  </svg>
+                </span>
+
                 <label for="subscription" class="modal-subscription-label"
                   >Согласен с рассылкой и принимаю
                   <a href="" class="modal-subscription-link"
@@ -606,8 +637,12 @@
             placeholder="E-mail"
             class="footer-signup-form-input"
           />
+
           <button type="submit" class="btn footer-signup-form-submit">
             Подписаться
+            <svg width="24" height="24" class="footer-signup-form-submit-icon">
+              <use href="./images/sprite.svg#send"></use>
+            </svg>
           </button>
         </form>
       </div>
