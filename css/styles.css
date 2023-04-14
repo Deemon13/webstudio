@@ -323,8 +323,7 @@ img {
   color: var(--logo-text-color);
   cursor: pointer;
 
-  transition: color var(--animation-time) var(--animation-time-function),
-    border-color var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function);
 }
 
 .modal-icon-close {
@@ -334,7 +333,6 @@ img {
 .modal-icon-close-wrapper:hover,
 .modal-icon-close-wrapper:focus {
   color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .modal-title {
@@ -403,8 +401,9 @@ img {
 
 .modal-input-icon {
   position: absolute;
-  top: 12px;
-  left: 15px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 
   fill: currentColor;
 }
@@ -449,35 +448,47 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-subscription {
+.modal-subscription-label {
   display: flex;
-  /* flex-direction: row-reverse; */
   align-items: center;
-  margin-right: auto;
   margin-bottom: 30px;
 }
 
+.modal-subscription-label:hover {
+  cursor: pointer;
+}
+
 .modal-subscription-check {
-  width: 16px;
-  height: 15px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--main-dark-text-color);
   border-radius: 2px;
 
   color: var(--main-light-text-color);
-  background-color: var(--accent-color);
+
+  transition: background-color var(--animation-time)
+      var(--animation-time-function),
+    border-color var(--animation-time) var(--animation-time-function);
 }
 
 .modal-subscription-check-icon {
   fill: currentColor;
+  background-color: transparent;
 }
 
-/* .modal-subscription-input {
-  margin-right: 8px;
-} */
+.modal-subscription-input {
+  position: absolute;
+  appearance: none;
+}
+
+.modal-subscription-input:checked
+  ~ .modal-subscription-label
+  > .modal-subscription-check {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 .modal-subscription-label {
   font-weight: 400;
@@ -899,7 +910,6 @@ img {
   padding-left: 16px;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
 
   font-weight: 400;
