@@ -480,6 +480,8 @@ img {
 
 .modal-subscription-input {
   position: absolute;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
