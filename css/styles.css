@@ -35,6 +35,17 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -478,13 +489,6 @@ img {
   background-color: transparent;
 }
 
-.modal-subscription-input {
-  position: absolute;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
 .modal-subscription-input:checked
   ~ .modal-subscription-label
   > .modal-subscription-check {
@@ -525,9 +529,8 @@ img {
 }
 
 .features-title {
-  display: none;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 .features-list {
@@ -738,6 +741,11 @@ img {
 
 .section-clients {
   background-color: var(--secondary-light-bg-color);
+}
+
+.title-clients {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .list-clients {
@@ -962,8 +970,7 @@ img {
 
 .portfolio-title {
   margin-top: 0;
-  margin-bottom: 0;
-  display: none;
+  margin-bottom: 50px;
 }
 
 .filter {
