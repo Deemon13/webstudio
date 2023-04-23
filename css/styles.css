@@ -67,6 +67,14 @@ img {
   text-decoration: none;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .btn {
   border: none;
   border-radius: 4px;
@@ -94,6 +102,8 @@ img {
   transform: scale(0.95);
 }
 
+/* LOGO */
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -104,20 +114,12 @@ img {
   color: var(--accent-color);
 }
 
-.logo-dark {
+.logo__accent {
   color: var(--logo-text-color);
 }
 
 .logo-light {
   color: var(--main-light-text-color);
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* HEADER */
@@ -126,7 +128,7 @@ img {
   border-bottom: 1px solid var(--header-line-color);
 }
 
-.container-header {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -136,36 +138,26 @@ img {
   align-items: center;
 }
 
-.logo-header {
+.header__logo {
   margin-right: 94px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.navigation-list {
+/* NAVIGATION */
+
+.navigation__list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.navigation-list-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.auth-list {
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.auth-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -180,30 +172,18 @@ img {
   transition: color var(--animation-time) var(--animation-time-function);
 }
 
-.mail-icon,
-.smartphone-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contact-link {
-  display: flex;
-  align-items: center;
-
-  color: var(--secondary-dark-text-color);
-}
-
-.header-link:hover,
-.header-link:focus,
-.current-link {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-color);
 }
 
-.current-link {
+.navigation__link--current {
   position: relative;
+
+  color: var(--accent-color);
 }
 
-.current-link::after {
+.navigation__link--current::after {
   position: absolute;
   left: 0;
   top: calc(100% - 3px);
@@ -215,6 +195,46 @@ img {
   border-radius: 2px;
 
   background-color: var(--accent-color);
+}
+
+/* AUTH-LIST */
+
+.auth-list {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.auth-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-list__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.auth-list__link:hover,
+.auth-list__link:focus {
+  color: var(--accent-color);
+}
+
+.auth-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* SECTION - HERO */
@@ -235,7 +255,7 @@ img {
   background-size: cover;
 }
 
-.container-hero {
+.hero__container {
   min-height: 600px;
   display: flex;
   flex-direction: column;
@@ -243,7 +263,7 @@ img {
   justify-content: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -257,7 +277,7 @@ img {
   color: var(--main-light-text-color);
 }
 
-.btn-hero {
+.hero__btn {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -269,6 +289,8 @@ img {
     background-color var(--animation-time) var(--animation-time-function),
     transform var(--animation-time) var(--animation-time-function);
 }
+
+/* BACKDROP */
 
 .backdrop {
   position: fixed;
@@ -297,6 +319,37 @@ img {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
+/* BUTTON - CLOSE */
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  color: var(--logo-text-color);
+  cursor: pointer;
+
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.close:hover {
+  color: var(--accent-color);
+}
+
+.close__icon {
+  fill: currentColor;
+}
+
+/* MODAL */
+
 .modal {
   position: absolute;
   top: 50%;
@@ -318,35 +371,7 @@ img {
   transition: transform var(--animation-time) var(--animation-time-function);
 }
 
-.modal-icon-close-wrapper {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-
-  color: var(--logo-text-color);
-  cursor: pointer;
-
-  transition: color var(--animation-time) var(--animation-time-function);
-}
-
-.modal-icon-close {
-  fill: currentColor;
-}
-
-.modal-icon-close-wrapper:hover,
-.modal-icon-close-wrapper:focus {
-  color: var(--accent-color);
-}
-
-.modal-title {
+.modal__title {
   margin-top: 0;
   margin-bottom: 12px;
 
@@ -359,12 +384,14 @@ img {
   color: var(--main-dark-text-color);
 }
 
-.modal-subscribe {
+/* SUBSCRIBE FORM */
+
+.subscribe-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-input-label {
+.subscribe-form__label {
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -375,7 +402,7 @@ img {
   color: var(--secondary-dark-text-color);
 }
 
-.modal-input-wrapper {
+.subscribe-form__field {
   position: relative;
 
   margin-bottom: 10px;
@@ -385,7 +412,11 @@ img {
   transition: color var(--animation-time) var(--animation-time-function);
 }
 
-.modal-input {
+.subscribe-form__field:focus-within {
+  color: var(--accent-color);
+}
+
+.subscribe-form__input {
   padding-top: 11px;
   padding-right: 12px;
   padding-bottom: 11px;
@@ -404,13 +435,13 @@ img {
   transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
-.modal-input:focus {
+.subscribe-form__input:focus {
   outline: none;
 
   border-color: var(--accent-color);
 }
 
-.modal-input-icon {
+.subscribe-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -419,11 +450,7 @@ img {
   fill: currentColor;
 }
 
-.modal-input-wrapper:focus-within {
-  color: var(--accent-color);
-}
-
-.modal-comments {
+.subscribe-form__comments {
   margin-bottom: 20px;
   padding-top: 12px;
   padding-right: 16px;
@@ -444,7 +471,7 @@ img {
   transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
-.modal-comments::placeholder {
+.subscribe-form__comments::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -453,23 +480,54 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-comments:focus {
+.subscribe-form__comments:focus {
   outline: none;
 
   border-color: var(--accent-color);
 }
 
-.modal-subscription-label {
-  display: flex;
-  align-items: center;
+.subscribe-form__field--checkbox {
   margin-bottom: 30px;
 }
 
-.modal-subscription-label:hover {
+.subscribe-form__acception {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-dark-text-color);
 }
 
-.modal-subscription-check {
+.subscribe-form__check:checked ~ .subscribe-form__acception > .checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.subscribe-form__link {
+  color: var(--accent-color);
+}
+
+.subscribe-form__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe-form__btn {
+  min-width: 200px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* CUSTOM CHECKBOX */
+
+.checkbox {
   margin-right: 8px;
   display: inline-flex;
   align-items: center;
@@ -484,42 +542,9 @@ img {
     border-color var(--animation-time) var(--animation-time-function);
 }
 
-.modal-subscription-check-icon {
+.checkbox__icon {
   fill: currentColor;
   background-color: transparent;
-}
-
-.modal-subscription-input:checked
-  ~ .modal-subscription-label
-  > .modal-subscription-check {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.modal-subscription-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-dark-text-color);
-}
-
-.modal-subscription-link {
-  color: var(--accent-color);
-}
-
-.btn-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.modal-submit {
-  min-width: 200px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
 }
 
 /* SECTION - FEATURES */

@@ -23,38 +23,39 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container container-header">
+      <div class="container header__container">
         <nav class="navigation">
-          <a lang="en" href="./index.html" class="logo logo-header link"
-            >Web<span class="logo-dark">Studio</span></a
+          <a lang="en" href="./index.html" class="link logo header__logo"
+            >Web<span class="logo__accent">Studio</span></a
           >
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a href="" class="header-link link current-link">Студия</a>
+          <ul class="list navigation__list">
+            <li class="navigation__item">
+              <a href="" class="link navigation__link navigation__link--current"
+                >Студия</a
+              >
             </li>
-            <li class="navigation-list-item">
-              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="link navigation__link"
+                >Портфолио</a
+              >
             </li>
-            <li class="navigation-list-item">
-              <a href="#contacts" class="header-link link">Контакты</a>
+            <li class="navigation__item">
+              <a href="#contacts" class="link navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-list list">
-          <li class="auth-list-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header-link contact-link link"
-            >
-              <svg class="mail-icon" width="16" height="12">
+        <ul class="list auth-list">
+          <li class="auth-list__item">
+            <a href="mailto:info@devstudio.com" class="link auth-list__link">
+              <svg class="auth-list__icon" width="16" height="12">
                 <use href="./images/sprite.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="auth-list-item">
-            <a href="tel:+380961111111" class="header-link contact-link link">
-              <svg class="smartphone-icon" width="10" height="16">
+          <li class="auth-list__item">
+            <a href="tel:+380961111111" class="link auth-list__link">
+              <svg class="auth-list__icon" width="10" height="16">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -67,70 +68,70 @@
     <main>
       <!-- SECTION - HERO -->
       <section class="hero">
-        <div class="container container-hero">
-          <h1 class="hero-title">
+        <div class="container hero__container">
+          <h1 class="hero__title">
             Эффективные решения для<br />вашего бизнеса
           </h1>
-          <button type="button" class="btn btn-hero" data-modal-open>
+          <button type="button" class="btn hero__btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <span class="modal-icon-close-wrapper" data-modal-close>
-              <svg class="modal-icon-close" width="11" height="11">
+            <span class="close" data-modal-close>
+              <svg class="close__icon" width="11" height="11">
                 <use href="./images/sprite.svg#close"></use>
               </svg>
             </span>
-            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <form
               action="javascript:void(0);"
               autocomplete="off"
               method="post"
               name="subscribe-form"
-              class="modal-subscribe"
+              class="subscribe-form"
             >
-              <label for="username" class="modal-input-label">Имя</label>
-              <div class="modal-input-wrapper">
+              <label for="username" class="subscribe-form__label">Имя</label>
+              <div class="subscribe-form__field">
                 <input
                   type="text"
                   name="username"
                   id="username"
-                  class="modal-input"
+                  class="subscribe-form__input"
                 />
-                <svg width="18" height="18" class="modal-input-icon">
+                <svg width="18" height="18" class="subscribe-form__icon">
                   <use href="./images/sprite.svg#person"></use>
                 </svg>
               </div>
 
-              <label for="phone_number" class="modal-input-label"
+              <label for="phone_number" class="subscribe-form__label"
                 >Телефон</label
               >
-              <div class="modal-input-wrapper">
+              <div class="subscribe-form__field">
                 <input
                   type="tel"
                   name="phone_number"
                   id="phone_number"
-                  class="modal-input"
+                  class="subscribe-form__input"
                 />
-                <svg width="18" height="18" class="modal-input-icon">
+                <svg width="18" height="18" class="subscribe-form__icon">
                   <use href="./images/sprite.svg#phone"></use>
                 </svg>
               </div>
-              <label for="email" class="modal-input-label">Почта</label>
-              <div class="modal-input-wrapper">
+              <label for="email" class="subscribe-form__label">Почта</label>
+              <div class="subscribe-form__field">
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  class="modal-input"
+                  class="subscribe-form__input"
                 />
-                <svg width="18" height="18" class="modal-input-icon">
+                <svg width="18" height="18" class="subscribe-form__icon">
                   <use href="./images/sprite.svg#mail-form"></use>
                 </svg>
               </div>
-              <label for="comments" class="modal-input-label"
+              <label for="comments" class="subscribe-form__label"
                 >Комментарии</label
               >
               <textarea
@@ -138,35 +139,34 @@
                 id="comments"
                 cols="30"
                 rows="7"
-                class="modal-comments"
+                class="subscribe-form__comments"
                 placeholder="Введите текст"
               ></textarea>
-              <div class="modal-subscription" role="group">
+              <div
+                class="subscribe-form__field subscribe-form__field--checkbox"
+                role="group"
+              >
                 <input
                   type="checkbox"
                   name="subscription"
                   id="subscription"
-                  class="modal-subscription-input visually-hidden"
+                  class="subscribe-form__check visually-hidden"
                 />
 
-                <label for="subscription" class="modal-subscription-label">
-                  <span class="modal-subscription-check">
-                    <svg
-                      width="16"
-                      height="15"
-                      class="modal-subscription-check-icon"
-                    >
+                <label for="subscription" class="subscribe-form__acception">
+                  <span class="checkbox">
+                    <svg width="16" height="15" class="checkbox__icon">
                       <use href="./images/sprite.svg#checked"></use>
                     </svg>
                   </span>
                   Согласен с рассылкой и принимаю&#160;
-                  <a href="" class="modal-subscription-link"
+                  <a href="" class="subscribe-form__link"
                     >Условия договора</a
                   ></label
                 >
               </div>
-              <div class="btn-wrapper">
-                <button type="submit" class="btn modal-submit">
+              <div class="subscribe-form__wrapper">
+                <button type="submit" class="btn subscribe-form__btn">
                   Отправить
                 </button>
               </div>
