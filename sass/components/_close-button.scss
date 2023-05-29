@@ -1,0 +1,26 @@
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  color: var(--logo-text-color);
+  cursor: pointer;
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.close__icon {
+  fill: currentColor;
+}

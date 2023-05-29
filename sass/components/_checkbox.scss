@@ -1,0 +1,19 @@
+.checkbox {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-dark-text-color);
+  border-radius: 2px;
+
+  color: var(--main-light-text-color);
+
+  transition: background-color var(--animation-time)
+      var(--animation-time-function),
+    border-color var(--animation-time) var(--animation-time-function);
+}
+
+.checkbox__icon {
+  fill: currentColor;
+  background-color: transparent;
+}
