@@ -1,0 +1,24 @@
+:root {
+  --main-light-bg-color: #ffffff;
+  --main-dark-bg-color: #2f303a;
+  --secondary-light-bg-color: #f5f5f5;
+  --alternative-light-bg-color: #f5f4fa;
+  --footer-bg-icon-color: rgba(255, 255, 255, 0.1); /* #ffffff 10% */
+  --portfolio-bg-overlay: rgba(33, 150, 243, 0.9); /* #2196F3 90 % */
+  --backdrop-bg-color: rgba(0, 0, 0, 0.2); /* #000000 20 % */
+
+  --main-dark-text-color: #212121;
+  --main-light-text-color: #ffffff;
+  --logo-text-color: #000000;
+  --secondary-dark-text-color: #757575;
+  --icon-color: #afb1b8;
+  --footer-link-color: rgba(255, 255, 255, 0.6); /* #ffffff 60% */
+
+  --portfolio-gallery-border-color: #eeeeee;
+  --header-line-color: #ececec;
+  --accent-color: #2196f3;
+  --accent-hover-btn: #188ce8;
+
+  --animation-time: 250ms;
+  --animation-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

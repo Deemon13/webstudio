@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 94px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
