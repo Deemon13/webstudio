@@ -606,29 +606,29 @@
 
 /* SECTION - FEATURES */
 
-.section__features {
+/* .section__features {
   background-color: var(--secondary-light-bg-color);
-}
+} */
 
-.title__features {
+/* .title__features {
   margin-top: 0;
   margin-bottom: 50px;
-}
+} */
 
-.features {
+/* .features {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
+} */
 
-.features__item {
+/* .features__item {
   flex-basis: calc((100% - 90px) / 4);
-}
+} */
 
-.feautures__icon-wrapper {
+/* .feautures__icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -640,14 +640,14 @@
   border-radius: 4px;
 
   background-color: var(--alternative-light-bg-color);
-}
+} */
 
-.features__icon {
+/* .features__icon {
   width: 70px;
   height: 70px;
-}
+} */
 
-.features__title {
+/* .features__title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -656,9 +656,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
+} */
 
-.features__text {
+/* .features__text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -667,37 +667,37 @@
   letter-spacing: 0.03em;
 
   color: var(--secondary-dark-text-color);
-}
+} */
 
 /* SECTION - SERVICES */
 
-.section__services {
+/* .section__services {
   padding-top: 0;
 
   background-color: var(--secondary-light-bg-color);
-}
+} */
 
-.title__services {
+/* .title__services {
   margin-top: 0;
   margin-bottom: 50px;
-}
+} */
 
-.services {
+/* .services {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
+} */
 
-.services__item {
+/* .services__item {
   position: relative;
 
   flex-basis: calc((100% - 60px) / 3);
-}
+} */
 
-.services__title {
+/* .services__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -717,29 +717,29 @@
 
   color: var(--main-light-text-color);
   background-color: rgba(47, 48, 58, 0.8);
-}
+} */
 
 /* SECTION-TEAM */
 
-.section__team {
+/* .section__team {
   background-color: var(--alternative-light-bg-color);
-}
+} */
 
-.title__team {
+/* .title__team {
   margin-top: 0;
   margin-bottom: 50px;
-}
+} */
 
-.team {
+/* .team {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
+} */
 
-.team__item {
+/* .team__item {
   flex-basis: calc((100% - 90px) / 4);
 
   border-radius: 0px 0px 4px 4px;
@@ -747,13 +747,13 @@
   background-color: var(--main-light-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.team__content {
+/* .team__content {
   padding: 30px;
-}
+} */
 
-.team__name {
+/* .team__name {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -762,9 +762,9 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-}
+} */
 
-.team__prof {
+/* .team__prof {
   margin-top: 0;
   margin-bottom: 16px;
 
@@ -775,32 +775,32 @@
   letter-spacing: 0.03em;
 
   color: var(--secondary-dark-text-color);
-}
+} */
 
 /* SECTION-CLIENTS */
 
-.section__clients {
+/* .section__clients {
   background-color: var(--secondary-light-bg-color);
-}
+} */
 
-.title__clients {
+/* .title__clients {
   margin-top: 0;
   margin-bottom: 50px;
-}
+} */
 
-.clients {
+/* .clients {
   padding-left: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-}
+} */
 
-.clients__item {
+/* .clients__item {
   flex-basis: calc((100% - 150px) / 6);
-}
+} */
 
-.clients__link {
+/* .clients__link {
   display: block;
   padding-top: 16px;
   padding-left: 30px;
@@ -813,26 +813,26 @@
 
   transition: color var(--animation-time) var(--animation-time-function),
     border-color var(--animation-time) var(--animation-time-function);
-}
+} */
 
-.clients__link:hover,
+/* .clients__link:hover,
 .clients__link:focus {
   color: var(--accent-color);
 
   border-color: var(--accent-color);
-}
+} */
 
-.client__wrap {
+/* .client__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 106px;
   height: 60px;
-}
+} */
 
-.client__icon {
+/* .client__icon {
   fill: currentColor;
-}
+} */
 
 /* FOOTER */
 
