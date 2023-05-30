@@ -1,0 +1,34 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay__backdrop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  overflow-y: auto;
+
+  background-color: var(--portfolio-bg-overlay);
+
+  transition: transform var(--animation-time) var(--animation-time-function);
+}
+
+.overlay__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--main-light-text-color);
+}
