@@ -1,22 +1,12 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.section__features {
-  background-color: var(--secondary-light-bg-color);
-}
+  &--bgcolor {
+    background-color: var(--secondary-light-bg-color);
+  }
 
-.section__services {
-  padding-top: 0;
-
-  background-color: var(--secondary-light-bg-color);
-}
-
-.section__team {
-  background-color: var(--alternative-light-bg-color);
-}
-
-.section__clients {
-  background-color: var(--secondary-light-bg-color);
+  &--services {
+    padding-top: 0;
+  }
 }

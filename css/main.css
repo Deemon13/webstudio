@@ -46,22 +46,11 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.section__features {
+.section--bgcolor {
   background-color: var(--secondary-light-bg-color);
 }
-
-.section__services {
+.section--services {
   padding-top: 0;
-  background-color: var(--secondary-light-bg-color);
-}
-
-.section__team {
-  background-color: var(--alternative-light-bg-color);
-}
-
-.section__clients {
-  background-color: var(--secondary-light-bg-color);
 }
 
 .container {
@@ -71,8 +60,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.container__footer {
+.container--footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,28 +73,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-.title__features {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__services {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__team {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__clients {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__portfolio {
+.title--section {
   margin-top: 0;
   margin-bottom: 50px;
 }

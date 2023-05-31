@@ -4,29 +4,9 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
 
-.title__features {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__services {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__team {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__clients {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.title__portfolio {
-  margin-top: 0;
-  margin-bottom: 50px;
+  &--section {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }

@@ -32,10 +32,6 @@
   }
 }
 
-// .subscribe-form__field:focus-within {
-//   color: var(--accent-color);
-// }
-
 .subscribe-form__input {
   padding-top: 11px;
   padding-right: 12px;
@@ -60,12 +56,6 @@
     border-color: var(--accent-color);
   }
 }
-
-// .subscribe-form__input:focus {
-//   outline: none;
-
-//   border-color: var(--accent-color);
-// }
 
 .subscribe-form__icon {
   position: absolute;
@@ -111,25 +101,6 @@
     border-color: var(--accent-color);
   }
 }
-
-// .subscribe-form__comments::placeholder {
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 1.17;
-//   letter-spacing: 0.01em;
-
-//   color: rgba(117, 117, 117, 0.5);
-// }
-
-// .subscribe-form__comments:focus {
-//   outline: none;
-
-//   border-color: var(--accent-color);
-// }
-
-// .subscribe-form__field--checkbox {
-//   margin-bottom: 30px;
-// }
 
 .subscribe-form__acception {
   display: flex;
