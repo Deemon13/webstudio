@@ -1,5 +1,7 @@
 .header {
   border-bottom: 1px solid var(--header-line-color);
+
+  outline: 1px solid blue;
 }
 
 .header__container {
@@ -8,7 +10,13 @@
 }
 
 .header__logo {
-  margin-right: 94px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // margin-right: 94px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
+// .header__logo {
+//   margin-right: 94px;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+// }
