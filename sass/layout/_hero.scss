@@ -1,53 +1,55 @@
-// .hero {
-//   margin-left: auto;
-//   margin-right: auto;
-//   max-width: 1600px;
+// MOBILE //
 
-//   background-color: var(--main-dark-bg-color);
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url('../images/hero/hero-bg-desktop-opt.jpg');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
 
-// .hero__container {
-//   min-height: 600px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// }
+  background-color: var(--main-dark-bg-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero/hero-bg-mobile.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-// .hero__title {
-//   margin-top: 0;
-//   margin-bottom: 30px;
+.hero__container {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
 
-//   color: var(--main-light-text-color);
-// }
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-// .hero__btn {
-//   display: inline-block;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   padding-left: 32px;
-//   padding-right: 32px;
-//   min-width: 216px;
+  color: var(--main-light-text-color);
+}
 
-//   transition: color var(--animation-time) var(--animation-time-function),
-//     background-color var(--animation-time) var(--animation-time-function),
-//     transform var(--animation-time) var(--animation-time-function);
-// }
+.hero__btn {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-width: 200px;
+
+  transition: color var(--animation-time) var(--animation-time-function),
+    background-color var(--animation-time) var(--animation-time-function),
+    transform var(--animation-time) var(--animation-time-function);
+}
 
 // .hero {
 //   margin-left: auto;

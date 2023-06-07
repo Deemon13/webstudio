@@ -522,6 +522,60 @@ img {
   padding-bottom: 16px;
 }
 
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  background-color: var(--main-dark-bg-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-bg-mobile.webp");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__container {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-light-text-color);
+}
+
+.hero__btn {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-width: 200px;
+  -webkit-transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), transform var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), transform var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
