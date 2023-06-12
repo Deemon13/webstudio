@@ -1,6 +1,8 @@
+// MOBILE
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   outline: 1px solid yellowgreen;
 
@@ -9,6 +11,23 @@
   }
 
   &--services {
-    padding-top: 0;
+    display: none;
   }
 }
+
+// DESKTOP
+
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+
+//   outline: 1px solid yellowgreen;
+
+//   &--bgcolor {
+//     background-color: var(--secondary-light-bg-color);
+//   }
+
+//   &--services {
+//     padding-top: 0;
+//   }
+// }

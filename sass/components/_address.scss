@@ -1,3 +1,5 @@
+// MOBILE
+
 .address {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,7 @@
 
 .address__text {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .address__link {
@@ -23,7 +25,7 @@
   transition: color var(--animation-time) var(--animation-time-function);
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   &:hover,
@@ -31,3 +33,39 @@
     color: var(--accent-color);
   }
 }
+
+// DESKTOP
+
+// .address {
+//   display: flex;
+//   flex-direction: column;
+
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+
+//   color: var(--main-light-text-color);
+// }
+
+// .address__text {
+//   margin-top: 0;
+//   margin-bottom: 10px;
+// }
+
+// .address__link {
+//   @extend %link;
+//   color: var(--footer-link-color);
+
+//   transition: color var(--animation-time) var(--animation-time-function);
+
+//   &:not(:last-child) {
+//     margin-bottom: 10px;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }

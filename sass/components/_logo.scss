@@ -1,3 +1,5 @@
+// MOBILE
+
 .logo {
   @extend %link;
   font-family: 'Raleway', sans-serif;
@@ -16,6 +18,8 @@
     color: var(--logo-text-color);
   }
 }
+
+// DESKTOP
 
 // .logo {
 //   @extend %link;
