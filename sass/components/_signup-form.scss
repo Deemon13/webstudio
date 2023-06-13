@@ -12,7 +12,6 @@
   padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
-  // width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
@@ -42,23 +41,25 @@
   }
 }
 
-// .signup__submit {
-//   padding-top: 10px;
-//   padding-right: 28px;
-//   padding-bottom: 10px;
-//   padding-left: 28px;
-//   min-width: 200px;
-//   display: inline-flex;
-//   align-items: center;
+.signup__submit {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
 
-//   color: var(--main-light-text-color);
-// }
+  color: var(--main-light-text-color);
+}
 
-// .signup__icon {
-//   margin-left: 10px;
+.signup__icon {
+  margin-left: 12px;
 
-//   fill: currentColor;
-// }
+  fill: currentColor;
+}
 
 // DESKTOP
 

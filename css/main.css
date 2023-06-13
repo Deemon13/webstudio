@@ -298,12 +298,11 @@ img {
 }
 
 .signup__input {
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-weight: 400;
@@ -353,6 +352,28 @@ img {
 .signup__input:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+
+.signup__submit {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--main-light-text-color);
+}
+
+.signup__icon {
+  margin-left: 12px;
+  fill: currentColor;
 }
 
 .filter {
@@ -594,8 +615,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 580px;
+  max-width: 450px;
+  min-height: 600px;
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
@@ -615,7 +636,7 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-dark-text-color);
