@@ -1,0 +1,20 @@
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--logo-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burger-menu__icon {
+  fill: currentColor;
+}

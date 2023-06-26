@@ -1,8 +1,10 @@
 // MOBILE
 
 .navigation {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation__list {
@@ -12,6 +14,12 @@
 
 .navigation__link {
   @extend %link;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
 // @media screen and (min-width: 768px) {

@@ -33,7 +33,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  max-width: 450px;
+  // max-width: 450px;
   min-height: 600px;
   padding-top: 40px;
   padding-right: 40px;
@@ -46,6 +46,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform var(--animation-time) var(--animation-time-function);
+
+  @media screen and (max-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 }
 
 .modal__title {
