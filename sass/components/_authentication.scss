@@ -13,6 +13,40 @@
   .auth-list {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  // .auth-list__item {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+
+  .auth-list__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-dark-text-color);
+
+    transition: color var(--animation-time) var(--animation-time-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .auth-list__icon {
+    margin-right: 8px;
+    fill: currentColor;
   }
 }
 

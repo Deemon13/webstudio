@@ -230,6 +230,41 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-dark-text-color);
+    -webkit-transition: color var(--animation-time) var(--animation-time-function);
+    transition: color var(--animation-time) var(--animation-time-function);
+  }
+  .navigation__link:hover, .navigation__link:focus {
+    color: var(--accent-color);
+  }
+  .navigation__link--current {
+    position: relative;
+    color: var(--accent-color);
+  }
+  .navigation__link--current::after {
+    position: absolute;
+    left: 0;
+    top: calc(100% - 3px);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
   }
 }
 .auth-list {
@@ -244,6 +279,35 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .auth-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-dark-text-color);
+    -webkit-transition: color var(--animation-time) var(--animation-time-function);
+    transition: color var(--animation-time) var(--animation-time-function);
+  }
+  .auth-list__link:hover, .auth-list__link:focus {
+    color: var(--accent-color);
+  }
+  .auth-list__icon {
+    margin-right: 8px;
+    fill: currentColor;
   }
 }
 .close {
