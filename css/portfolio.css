@@ -71,6 +71,16 @@ img {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .title {
   font-weight: 700;
@@ -111,8 +121,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.72px;
   color: var(--accent-color);
 }
 .logo--light {
@@ -120,6 +129,12 @@ img {
 }
 .logo--accent {
   color: var(--logo-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 
 .burger-menu {
@@ -267,6 +282,11 @@ img {
     background-color: var(--accent-color);
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation {
+    width: auto;
+  }
+}
 .auth-list {
   display: none;
 }
@@ -276,9 +296,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -286,6 +306,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .auth-list__item:first-child {
+    margin-bottom: 10px;
   }
   .auth-list__link {
     display: -webkit-box;
@@ -308,6 +331,27 @@ img {
   .auth-list__icon {
     margin-right: 8px;
     fill: currentColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .auth-list__item:first-child {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .auth-list__icon {
+    margin-right: 10px;
   }
 }
 .close {
@@ -640,6 +684,19 @@ img {
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;

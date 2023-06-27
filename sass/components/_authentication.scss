@@ -9,25 +9,23 @@
   @extend %link;
 }
 
+// TABLET
+
 @media screen and (min-width: 768px) {
   .auth-list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
   }
 
-  // .auth-list__item {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
+  .auth-list__item:first-child {
+    margin-bottom: 10px;
+  }
 
   .auth-list__link {
-    @extend %link;
     display: flex;
     align-items: center;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -46,17 +44,29 @@
 
   .auth-list__icon {
     margin-right: 8px;
+
     fill: currentColor;
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .auth-list {
-//     @extend %list;
-//     display: flex;
-//     align-items: center;
-//   }
+// DESKTOP
 
+@media screen and (min-width: 1200px) {
+  .auth-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .auth-list__item:first-child {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .auth-list__icon {
+    margin-right: 10px;
+  }
+}
 //   .auth-list__item:not(:last-child) {
 //     margin-right: 50px;
 //   }

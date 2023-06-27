@@ -30,7 +30,6 @@
   }
 
   .navigation__link {
-    @extend %link;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -71,11 +70,13 @@
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .navigation {
-//     display: flex;
-//     align-items: center;
-//   }
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    width: auto;
+  }
+}
 
 //   .navigation__list {
 //     @extend %list;
