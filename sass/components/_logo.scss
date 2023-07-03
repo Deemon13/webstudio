@@ -5,8 +5,8 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  // line-height: 1.17;
-  letter-spacing: 0.72px; // 0.03em px -> em = letter-spacing(px)/font-size(px) = letter-spacing(em)
+  line-height: 1.17; // 28px
+  letter-spacing: 0.03em; //  0.72px px -> em = letter-spacing(px)/font-size(px) = letter-spacing(em)
 
   color: var(--accent-color);
 
@@ -21,31 +21,10 @@
   // DESKTOP
   @media screen and (min-width: 1200px) {
     font-size: 26px;
-    // line-height: 1.19;
-    letter-spacing: 0.78px; // 0.03em px -> em = letter-spacing(px)/font-size(px) = letter-spacing(em)
+    line-height: 1.19; // 31px
+    letter-spacing: 0.03em; // 0.78px px -> em = letter-spacing(px)/font-size(px) = letter-spacing(em)
     // &--footer {
     //   display: flex;
     // }
   }
 }
-
-// DESKTOP
-
-// .logo {
-//   @extend %link;
-//   font-family: 'Raleway', sans-serif;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-
-//   color: var(--accent-color);
-
-//   &--light {
-//     color: var(--main-light-text-color);
-//   }
-
-//   &--accent {
-//     color: var(--logo-text-color);
-//   }
-// }

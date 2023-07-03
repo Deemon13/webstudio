@@ -121,7 +121,8 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  letter-spacing: 0.72px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo--light {
@@ -133,7 +134,8 @@ img {
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    letter-spacing: 0.78px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -318,8 +320,8 @@ img {
         -ms-flex-align: center;
             align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--secondary-dark-text-color);
     -webkit-transition: color var(--animation-time) var(--animation-time-function);
@@ -349,6 +351,12 @@ img {
   .auth-list__item:first-child {
     margin-bottom: 0;
     margin-right: 50px;
+  }
+  .auth-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
   .auth-list__icon {
     margin-right: 10px;
@@ -709,6 +717,12 @@ img {
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-bg@2x-mobile.webp");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg@2x-mobile.webp");
+  }
+}
 .hero__container {
   min-height: 400px;
   display: -webkit-box;
@@ -751,6 +765,13 @@ img {
   transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), transform var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--main-light-text-color);
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
