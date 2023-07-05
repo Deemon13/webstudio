@@ -309,9 +309,13 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-list__item:first-child {
     margin-bottom: 10px;
   }
+}
+@media screen and (min-width: 768px) {
   .auth-list__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -330,6 +334,8 @@ img {
   .auth-list__link:hover, .auth-list__link:focus {
     color: var(--accent-color);
   }
+}
+@media screen and (min-width: 768px) {
   .auth-list__icon {
     margin-right: 8px;
     fill: currentColor;
@@ -349,7 +355,6 @@ img {
             justify-content: flex-start;
   }
   .auth-list__item:first-child {
-    margin-bottom: 0;
     margin-right: 50px;
   }
   .auth-list__link {

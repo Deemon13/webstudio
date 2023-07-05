@@ -19,8 +19,12 @@
     justify-content: center;
   }
 
-  .auth-list__item:first-child {
-    margin-bottom: 10px;
+  .auth-list__item {
+    &:first-child {
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .auth-list__link {
@@ -59,7 +63,6 @@
   }
 
   .auth-list__item:first-child {
-    margin-bottom: 0;
     margin-right: 50px;
   }
 
