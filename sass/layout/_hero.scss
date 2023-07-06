@@ -58,9 +58,10 @@
   padding-right: 24px;
   min-width: 200px;
 
-  transition: color var(--animation-time) var(--animation-time-function),
-    background-color var(--animation-time) var(--animation-time-function),
-    transform var(--animation-time) var(--animation-time-function);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 // TABLET
@@ -123,21 +124,14 @@
   .hero__title {
     font-size: 44px;
     line-height: 1.36; // 60px
-    // letter-spacing: 0.06em; // 2.64px
+    letter-spacing: 0.06em; // 2.64px
 
     color: var(--main-light-text-color);
   }
+
+  .hero__btn {
+    padding-left: 32px;
+    padding-right: 32px;
+    min-width: 216px;
+  }
 }
-
-// .hero__btn {
-//   display: inline-block;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   padding-left: 32px;
-//   padding-right: 32px;
-//   min-width: 216px;
-
-//   transition: color var(--animation-time) var(--animation-time-function),
-//     background-color var(--animation-time) var(--animation-time-function),
-//     transform var(--animation-time) var(--animation-time-function);
-// }
