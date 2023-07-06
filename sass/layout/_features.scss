@@ -4,8 +4,12 @@
   @extend %list;
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+.features__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .feautures__icon-wrapper {
@@ -32,8 +36,8 @@
   text-align: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  line-height: 1.14; // 16px
+  letter-spacing: 0.03em; // 0.42px
   text-transform: uppercase;
 }
 
@@ -42,62 +46,34 @@
   margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: 1.71; // 24px
+  letter-spacing: 0.03em; // 0.42px
 
   color: var(--secondary-dark-text-color);
 }
 
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .features__title {
+    text-align: left;
+  }
+}
+
 // DESKTOP
 
-// .features {
-//   @extend %list;
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-// }
-
-// .features__item {
-//   flex-basis: calc((100% - 90px) / 4);
-// }
-
-// .feautures__icon-wrapper {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 30px;
-//   padding-top: 25px;
-//   padding-right: 100px;
-//   padding-bottom: 25px;
-//   padding-left: 100px;
-//   border-radius: 4px;
-
-//   background-color: var(--alternative-light-bg-color);
-// }
-
-// .features__icon {
-//   width: 70px;
-//   height: 70px;
-// }
-
-// .features__title {
-//   margin-top: 0;
-//   margin-bottom: 10px;
-
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-// }
-
-// .features__text {
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-
-//   color: var(--secondary-dark-text-color);
-// }
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
