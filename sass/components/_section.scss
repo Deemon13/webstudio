@@ -17,17 +17,14 @@
 
 // DESKTOP
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-//   outline: 1px solid yellowgreen;
-
-//   &--bgcolor {
-//     background-color: var(--secondary-light-bg-color);
-//   }
-
-//   &--services {
-//     padding-top: 0;
-//   }
-// }
+    &--services {
+      display: block;
+      padding-top: 0;
+    }
+  }
+}
