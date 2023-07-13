@@ -3,9 +3,9 @@
 .title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.18;
+  line-height: 1.18; // 33px
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; // 0.84px
 
   &--section {
     margin-top: 0;
@@ -13,15 +13,15 @@
   }
 }
 
-// .title {
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.17;
-//   text-align: center;
-//   letter-spacing: 0.03em;
+// DESKTOP
 
-//   &--section {
-//     margin-top: 0;
-//     margin-bottom: 50px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17; // 42px
+
+    &--section {
+      margin-bottom: 50px;
+    }
+  }
+}

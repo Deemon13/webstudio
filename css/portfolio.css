@@ -104,6 +104,15 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .title--section {
+    margin-bottom: 50px;
+  }
+}
 .btn {
   border: none;
   border-radius: 4px;
