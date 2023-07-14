@@ -1,13 +1,16 @@
 // MOBILE
 
 .signup {
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
 }
 
 .signup__input {
   margin-bottom: 20px;
+  width: 100%;
   padding-top: 15px;
   padding-right: 16px;
   padding-bottom: 15px;
@@ -28,8 +31,8 @@
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    line-height: 1.25; // 20px
+    letter-spacing: 0.03em; // 0.48px
 
     color: rgba(255, 255, 255, 0.6);
   }
@@ -63,60 +66,27 @@
 
 // DESKTOP
 
-// .signup {
-//   padding-top: 12px;
-// }
+@media screen and (min-width: 1200px) {
+  .signup {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+    padding-top: 12px;
 
-// .signup__input {
-//   margin-right: 12px;
-//   padding-top: 15px;
-//   padding-right: 16px;
-//   padding-bottom: 15px;
-//   padding-left: 16px;
-//   width: 358px;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   border-radius: 4px;
+    text-align: left;
+  }
 
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.25;
-//   letter-spacing: 0.03em;
+  .signup__wrapper {
+    display: flex;
+  }
 
-//   color: rgba(255, 255, 255, 0.6);
-//   background-color: transparent;
+  .signup__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
-//   transition: border-color var(--animation-time) var(--animation-time-function);
-
-//   &::placeholder {
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.25;
-//     letter-spacing: 0.03em;
-
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-
-//   &:focus {
-//     outline: none;
-
-//     border-color: var(--accent-color);
-//   }
-// }
-
-// .signup__submit {
-//   padding-top: 10px;
-//   padding-right: 28px;
-//   padding-bottom: 10px;
-//   padding-left: 28px;
-//   min-width: 200px;
-//   display: inline-flex;
-//   align-items: center;
-
-//   color: var(--main-light-text-color);
-// }
-
-// .signup__icon {
-//   margin-left: 10px;
-
-//   fill: currentColor;
-// }
+  .signup__icon {
+    margin-left: 10px;
+  }
+}

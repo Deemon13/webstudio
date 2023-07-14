@@ -524,68 +524,70 @@
     <!-- FOOTER -->
     <footer id="contacts" class="footer">
       <div class="container container--footer">
-        <div class="footer__contacts">
-          <a lang="en" href="./index.html" class="logo footer__logo"
-            >Web<span class="logo--light">Studio</span></a
-          >
-          <address class="address">
-            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@devstudio.com" class="address__link"
-              >info@devstudio.com</a
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <a lang="en" href="./index.html" class="logo footer__logo"
+              >Web<span class="logo--light">Studio</span></a
             >
-            <a href="tel:+380961111111" class="address__link"
-              >+38 096 111 11 11</a
-            >
-          </address>
-        </div>
-        <div class="footer__join">
-          <p class="footer__appeal">Присоединяйтесь</p>
-          <ul class="social">
-            <li class="social__item">
-              <a
-                href=""
-                aria-label="Instagram"
-                class="social__link social__link--footer"
+            <address class="address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="mailto:info@devstudio.com" class="address__link"
+                >info@devstudio.com</a
               >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                aria-label="Twitter"
-                class="social__link social__link--footer"
+              <a href="tel:+380961111111" class="address__link"
+                >+38 096 111 11 11</a
               >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                aria-label="Facebook"
-                class="social__link social__link--footer"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                aria-label="LinkedIn"
-                class="social__link social__link--footer"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            </address>
+          </div>
+          <div class="footer__join">
+            <p class="footer__appeal">Присоединяйтесь</p>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Instagram"
+                  class="social__link social__link--footer"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Twitter"
+                  class="social__link social__link--footer"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Facebook"
+                  class="social__link social__link--footer"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="LinkedIn"
+                  class="social__link social__link--footer"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form
           action="javascript:void(0);"
@@ -595,19 +597,21 @@
           class="signup"
         >
           <p class="footer__appeal">Подпишитесь на рассылку</p>
-          <input
-            type="email"
-            name="signup-email"
-            placeholder="E-mail"
-            class="signup__input"
-          />
+          <div class="signup__wrapper">
+            <input
+              type="email"
+              name="signup-email"
+              placeholder="E-mail"
+              class="signup__input"
+            />
 
-          <button type="submit" class="btn signup__submit">
-            Подписаться
-            <svg width="24" height="24" class="signup__icon">
-              <use href="./images/sprite.svg#send"></use>
-            </svg>
-          </button>
+            <button type="submit" class="btn signup__submit">
+              Подписаться
+              <svg width="24" height="24" class="signup__icon">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>

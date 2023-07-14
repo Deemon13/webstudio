@@ -90,6 +90,18 @@ img {
   .container {
     max-width: 1200px;
   }
+  .container--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .title {
@@ -472,8 +484,18 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .address__text {
+    margin-bottom: 9px;
+  }
+  .address__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 .signup {
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,6 +507,7 @@ img {
 
 .signup__input {
   margin-bottom: 20px;
+  width: 100%;
   padding-top: 15px;
   padding-right: 16px;
   padding-bottom: 15px;
@@ -562,6 +585,28 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .signup {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+    padding-top: 12px;
+    text-align: left;
+  }
+  .signup__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .signup__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .signup__icon {
+    margin-left: 10px;
+  }
+}
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1308,6 +1353,10 @@ img {
   background-color: var(--main-dark-bg-color);
 }
 
+.footer__wrapper {
+  margin-bottom: 60px;
+}
+
 .footer__contacts {
   margin-bottom: 60px;
 }
@@ -1315,10 +1364,6 @@ img {
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-}
-
-.footer__join {
-  margin-bottom: 60px;
 }
 
 .footer__appeal {
@@ -1332,6 +1377,37 @@ img {
   color: var(--main-light-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contacts {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+  .footer__join {
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    margin-bottom: 0;
+  }
+  .footer__contacts {
+    text-align: left;
+    margin-right: 70px;
+  }
+  .footer__join {
+    padding-top: 12px;
+    text-align: left;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
