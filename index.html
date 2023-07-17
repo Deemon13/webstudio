@@ -28,11 +28,44 @@
           <a lang="en" href="./index.html" class="logo header__logo"
             >Web<span class="logo--accent">Studio</span></a
           >
-          <a href="" class="burger-menu">
+          <a
+            href=""
+            class="burger-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="burger-menu__icon" width="24" height="16">
               <use href="./images/sprite.svg#burger_menu"></use>
             </svg>
           </a>
+
+          <!-- MOBILE-MENU -->
+          <div class="mobile-menu js-menu-container">
+            <span class="close js-close-menu">
+              <svg class="close__icon" width="11" height="11">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </span>
+            <ul>
+              <li><a href="">Студия</a></li>
+              <li><a href="./portfolio.html">Портфолио</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <ul>
+              <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+          <!-- END OF MOBILE-MENU -->
+
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="" class="navigation__link navigation__link--current"
@@ -75,7 +108,13 @@
           <h1 class="hero__title">
             Эффективные решения для<br />вашего бизнеса
           </h1>
-          <button type="button" class="btn hero__btn" data-modal-open>
+          <button
+            type="button"
+            class="btn hero__btn"
+            data-modal-open
+            aria-expanded="false"
+            aria-controls="modal"
+          >
             Заказать услугу
           </button>
         </div>
@@ -617,6 +656,13 @@
     </footer>
 
     <!-- SCRIPTS SECTION -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

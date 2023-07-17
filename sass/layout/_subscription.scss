@@ -1,3 +1,5 @@
+// MOBILE
+
 .subscribe-form {
   display: flex;
   flex-direction: column;
@@ -8,8 +10,8 @@
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  line-height: 1.17; // 14px
+  letter-spacing: 0.01em; //0.12px
 
   color: var(--secondary-dark-text-color);
 }
@@ -42,9 +44,9 @@
   border-radius: 4px;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1.17; // 16px
+  letter-spacing: 0.01em; // 0.14px
 
   color: var(--main-dark-text-color);
 
@@ -78,9 +80,9 @@
   resize: none;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1.17; // 16px
+  letter-spacing: 0.01em; // 0.14px
 
   color: var(--main-dark-text-color);
 
@@ -88,9 +90,9 @@
 
   &::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    font-size: 14px;
+    line-height: 1.17; // 16px
+    letter-spacing: 0.01em; // 0.14px
 
     color: rgba(117, 117, 117, 0.5);
   }
@@ -108,9 +110,9 @@
   cursor: pointer;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.17; // 14px
+  letter-spacing: 0.03em; // 0.36px
 
   color: var(--secondary-dark-text-color);
 }
@@ -135,4 +137,26 @@
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    font-size: 12px;
+  }
+
+  .subscribe-form__comments {
+    font-size: 12px;
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  .subscribe-form__acception {
+    font-size: 14px;
+    line-height: 1.71; // 24px
+    // letter-spacing: 0.03em; // 0.42px
+  }
 }

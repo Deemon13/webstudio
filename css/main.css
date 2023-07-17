@@ -257,6 +257,7 @@ img {
 }
 
 .navigation {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,6 +452,11 @@ img {
   background-color: transparent;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    margin-right: 7px;
+  }
+}
 .address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,6 +820,15 @@ img {
     padding-bottom: 25px;
   }
 }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--alternative-light-bg-color);
+}
+
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -989,6 +1004,15 @@ img {
   color: var(--main-dark-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 580px;
+  }
+  .modal__title {
+    line-height: 1.15;
+  }
+}
 .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1031,7 +1055,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-dark-text-color);
@@ -1062,7 +1086,7 @@ img {
   border-radius: 4px;
   resize: none;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-dark-text-color);
@@ -1071,35 +1095,35 @@ img {
 }
 .subscribe-form__comments::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .subscribe-form__comments::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .subscribe-form__comments:-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .subscribe-form__comments::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .subscribe-form__comments::placeholder {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -1118,8 +1142,8 @@ img {
           align-items: center;
   cursor: pointer;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-dark-text-color);
 }
@@ -1146,6 +1170,33 @@ img {
   padding-left: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    font-size: 12px;
+  }
+  .subscribe-form__comments {
+    font-size: 12px;
+  }
+  .subscribe-form__comments::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .subscribe-form__comments::-moz-placeholder {
+    font-size: 12px;
+  }
+  .subscribe-form__comments:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .subscribe-form__comments::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .subscribe-form__comments::placeholder {
+    font-size: 12px;
+  }
+  .subscribe-form__acception {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 @media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;

@@ -257,6 +257,7 @@ img {
 }
 
 .navigation {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,6 +452,11 @@ img {
   background-color: transparent;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    margin-right: 7px;
+  }
+}
 .address {
   display: -webkit-box;
   display: -ms-flexbox;
