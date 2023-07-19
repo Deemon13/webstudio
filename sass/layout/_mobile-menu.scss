@@ -7,6 +7,109 @@
   width: 100vw;
   height: 100vh;
   z-index: 999;
+  padding-top: 48px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  background-color: var(--alternative-light-bg-color);
+  background-color: var(--main-light-bg-color);
+}
+
+.mobile-nav {
+  @extend %list;
+}
+
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__link {
+  @extend %link;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18; // 47px
+  letter-spacing: 0.02em; // 0.8px
+
+  color: var(--main-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts {
+  @extend %list;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__link {
+  @extend %link;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17; // 28px
+  letter-spacing: 0.02em; // 0.48px
+
+  color: var(--secondary-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--phone {
+    font-size: 34px;
+    line-height: 1.18; // 40px
+    //letter-spacing: 0.02em; // 0.68px
+    color: var(--accent-color);
+
+    @media screen and (max-width: 379px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.mobile-social {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-social__item {
+  @media screen and (max-width: 439px) {
+    margin-bottom: 10px;
+  }
+}
+
+.mobile-social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link {
+  @extend %link;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22; // 22px
+  letter-spacing: 0.02em; // 0.36px
+
+  color: #2196f3;
 }
