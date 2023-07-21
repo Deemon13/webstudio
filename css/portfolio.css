@@ -319,7 +319,7 @@ img {
   .navigation__link--current::after {
     position: absolute;
     left: 0;
-    top: calc(100% - 3px);
+    top: calc(100% - 4px);
     content: "";
     display: block;
     width: 100%;
@@ -872,7 +872,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow-y: scroll;
   -webkit-transition: opacity var(--animation-time) var(--animation-time-function), visibility var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
   transition: opacity var(--animation-time) var(--animation-time-function), visibility var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
   transition: transform var(--animation-time) var(--animation-time-function), opacity var(--animation-time) var(--animation-time-function), visibility var(--animation-time) var(--animation-time-function);
