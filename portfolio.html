@@ -28,44 +28,80 @@
           <a lang="en" href="./index.html" class="logo header__logo"
             >Web<span class="logo--accent">Studio</span></a
           >
-          <a href="" class="burger-menu">
+          <button
+            type="button"
+            class="burger-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="burger-menu__icon" width="24" height="16">
               <use href="./images/sprite.svg#burger_menu"></use>
             </svg>
-          </a>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link navigation__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#contacts" class="navigation__link">Контакты</a>
-            </li>
-          </ul>
+          </button>
+
+          <!-- MOBILE-MENU -->
+          <div class="mobile-menu js-menu-container">
+            <button type="button" class="mobile-menu__close js-close-menu">
+              <svg class="mobile-menu__icon" width="11" height="11">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link navigation__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#contacts" class="navigation__link js-contacts-menu"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <div class="mobile-menu__bottom">
+              <ul class="auth-list">
+                <li class="auth-list__item">
+                  <a href="mailto:info@devstudio.com" class="auth-list__link">
+                    <svg class="auth-list__icon" width="16" height="12">
+                      <use href="./images/sprite.svg#mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="auth-list__item auth-list__item--phone">
+                  <a
+                    href="tel:+380961111111"
+                    class="auth-list__link auth-list__link--phone"
+                  >
+                    <svg class="auth-list__icon" width="10" height="16">
+                      <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-social">
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <ul class="auth-list">
-          <li class="auth-list__item">
-            <a href="mailto:info@devstudio.com" class="auth-list__link">
-              <svg class="auth-list__icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-list__item">
-            <a href="tel:+380961111111" class="auth-list__link">
-              <svg class="auth-list__icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
+      <!-- END OF MOBILE-MENU -->
     </header>
     <main>
       <!-- SECTION - PORTFOLIO -->
@@ -429,5 +465,15 @@
         </form>
       </div>
     </footer>
+
+    <!-- SCRIPTS SECTION -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

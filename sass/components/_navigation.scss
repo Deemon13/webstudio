@@ -10,11 +10,31 @@
 
 .navigation__list {
   @extend %list;
-  display: none;
+}
+
+.navigation__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .navigation__link {
   @extend %link;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18; // 47px
+  letter-spacing: 0.02em; // 0.8px
+
+  color: var(--main-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
 }
 
 // TABLET
@@ -22,11 +42,10 @@
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .navigation__item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 
@@ -35,24 +54,12 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14; // 16px
-    letter-spacing: 0.02em; // 0.28px 0.02em
-
-    color: var(--main-dark-text-color);
-
-    transition: color var(--animation-time) var(--animation-time-function);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+    // letter-spacing: 0.02em; // 0.28px 0.02em
 
     &--current {
       position: relative;
-
-      color: var(--accent-color);
 
       &::after {
         position: absolute;

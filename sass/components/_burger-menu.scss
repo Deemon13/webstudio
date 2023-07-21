@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 
+  background-color: transparent;
   color: var(--logo-text-color);
 
   &:hover,

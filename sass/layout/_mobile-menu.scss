@@ -1,19 +1,13 @@
 // MOBILE
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  padding-top: 48px;
-  padding-right: 40px;
-  padding-bottom: 48px;
-  padding-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  transition: transform var(--animation-time) var(--animation-time-function),
+    opacity var(--animation-time) var(--animation-time-function),
+    visibility var(--animation-time) var(--animation-time-function);
 
   background-color: var(--main-light-bg-color);
 }
@@ -22,73 +16,6 @@
   position: absolute;
   top: 10px;
   right: 15px;
-}
-
-.mobile-nav {
-  @extend %list;
-}
-
-.mobile-nav__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mobile-nav__link {
-  @extend %link;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.18; // 47px
-  letter-spacing: 0.02em; // 0.8px
-
-  color: var(--main-dark-text-color);
-
-  transition: color var(--animation-time) var(--animation-time-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-
-  &--current {
-    color: var(--accent-color);
-  }
-}
-
-.mobile-contacts {
-  @extend %list;
-  margin-bottom: 64px;
-}
-
-.mobile-contacts__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mobile-contacts__link {
-  @extend %link;
-
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.17; // 28px
-  letter-spacing: 0.02em; // 0.48px
-
-  color: var(--secondary-dark-text-color);
-
-  transition: color var(--animation-time) var(--animation-time-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-
-  &--phone {
-    font-size: 34px;
-    line-height: 1.18; // 40px
-    //letter-spacing: 0.02em; // 0.68px
-    color: var(--accent-color);
-
-    @media screen and (max-width: 379px) {
-      font-size: 26px;
-    }
-  }
 }
 
 .mobile-social {
@@ -118,4 +45,50 @@
   letter-spacing: 0.02em; // 0.36px
 
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .mobile-menu.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    flex-direction: row;
+  }
+
+  .mobile-menu__close {
+    display: none;
+  }
+
+  .mobile-menu__bottom {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .mobile-social {
+    display: none;
+  }
 }

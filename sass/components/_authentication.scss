@@ -2,21 +2,65 @@
 
 .auth-list {
   @extend %list;
-  display: none;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
+}
+
+.auth-list__item {
+  &--phone {
+    margin-bottom: 32px;
+  }
 }
 
 .auth-list__link {
   @extend %link;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17; // 28px
+  letter-spacing: 0.02em; // 0.48px
+
+  color: var(--secondary-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--phone {
+    font-size: 34px;
+    line-height: 1.18; // 40px
+    //letter-spacing: 0.02em; // 0.68px
+    color: var(--accent-color);
+
+    @media screen and (max-width: 379px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.auth-list__icon {
+  display: none;
 }
 
 // TABLET
 
 @media screen and (min-width: 768px) {
   .auth-list {
-    display: flex;
+    margin-left: 90px;
+    margin-bottom: 0;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .auth-list__item {
+    &--phone {
+      margin-bottom: 0;
+    }
   }
 
   .auth-list__item {
@@ -31,22 +75,17 @@
     display: flex;
     align-items: center;
 
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.17; // 14px
-    letter-spacing: 0.02em; //0.02em 0.24px
+    // letter-spacing: 0.02em; //0.02em 0.24px
 
-    color: var(--secondary-dark-text-color);
-
-    transition: color var(--animation-time) var(--animation-time-function);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
+    &--phone {
+      color: var(--secondary-dark-text-color);
     }
   }
 
   .auth-list__icon {
+    display: block;
     margin-right: 8px;
 
     fill: currentColor;
@@ -57,6 +96,7 @@
 
 @media screen and (min-width: 1200px) {
   .auth-list {
+    margin-left: 312px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
