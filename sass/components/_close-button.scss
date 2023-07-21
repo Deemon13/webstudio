@@ -3,6 +3,7 @@
   top: 8px;
   right: 8px;
 
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,11 +13,13 @@
   border-radius: 50%;
 
   color: var(--logo-text-color);
-  cursor: pointer;
+  background-color: transparent;
 
   transition: color var(--animation-time) var(--animation-time-function);
 
-  &:hover {
+  &:hover,
+  &:focus {
+    cursor: pointer;
     color: var(--accent-color);
   }
 }

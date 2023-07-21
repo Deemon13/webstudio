@@ -171,6 +171,9 @@ img {
 }
 
 .burger-menu {
+  padding: 0;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +188,7 @@ img {
   color: var(--logo-text-color);
 }
 .burger-menu:hover, .burger-menu:focus {
+  cursor: pointer;
   color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
@@ -448,6 +452,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,11 +467,12 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: var(--logo-text-color);
-  cursor: pointer;
+  background-color: transparent;
   -webkit-transition: color var(--animation-time) var(--animation-time-function);
   transition: color var(--animation-time) var(--animation-time-function);
 }
-.close:hover {
+.close:hover, .close:focus {
+  cursor: pointer;
   color: var(--accent-color);
 }
 
@@ -877,6 +883,28 @@ img {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu__close:hover, .mobile-menu__close:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.mobile-menu__icon {
+  fill: currentColor;
 }
 
 .mobile-social {
@@ -952,6 +980,9 @@ img {
   }
 }
 .burger-menu {
+  padding: 0;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,6 +997,7 @@ img {
   color: var(--logo-text-color);
 }
 .burger-menu:hover, .burger-menu:focus {
+  cursor: pointer;
   color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
