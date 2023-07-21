@@ -872,6 +872,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-y: scroll;
   -webkit-transition: opacity var(--animation-time) var(--animation-time-function), visibility var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
   transition: opacity var(--animation-time) var(--animation-time-function), visibility var(--animation-time) var(--animation-time-function), -webkit-transform var(--animation-time) var(--animation-time-function);
   transition: transform var(--animation-time) var(--animation-time-function), opacity var(--animation-time) var(--animation-time-function), visibility var(--animation-time) var(--animation-time-function);
@@ -1124,6 +1125,7 @@ img {
   padding-bottom: 40px;
   padding-left: 40px;
   border-radius: 4px;
+  overflow-y: scroll;
   background-color: var(--main-light-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1287,6 +1289,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
