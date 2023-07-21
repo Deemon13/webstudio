@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: scroll;
 
   transition: transform var(--animation-time) var(--animation-time-function),
     opacity var(--animation-time) var(--animation-time-function),
